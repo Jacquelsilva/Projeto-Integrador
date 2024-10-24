@@ -1,0 +1,237 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+@font-face {
+    font-family: Aileron;
+    src: url(../fonts/Ailerons-Typeface.otf);
+}
+@font-face {
+    font-family: Corinthians;
+    src: url(../fonts/FONT-CORINTHIANS-2023.otf);
+    
+}
+@font-face {
+    font-family: LemonMilk;
+    src: url(../fonts/LEMONMILK-Bold.otf);
+}
+@font-face {
+    font-family: LemonMilk R;
+    src: url(../fonts/LEMONMILK-Medium.otf);
+}
+
+html{
+    font-family: LemonMilk R;
+}
+body{
+    width: 100%;
+    margin: 0;
+}
+.content-idols
+{
+    height: 44em;
+    background-image: 
+        linear-gradient( to right,#036955 50%, rgba(205, 152, 152, 0)90%), 
+        url(../img/WEB.png); 
+    background-position: center;
+    background-size: cover;
+    text-align: justify;
+    display: flex;
+}
+.imagem-idols{
+    position: absolute;
+}
+.div1-idols {
+    margin-left: 10em;
+    margin-top: 4em;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+ .titulo-materias{
+    margin-top: 0.2em;
+    font-size: 2em;
+    font-family: LemonMilk;
+    color: white;
+    transition: 0.5;
+    width: 14em;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.781));
+    
+}
+.text-idols{
+    display: flex;
+    font-family: Raleway;
+    font-size: 1.2em;
+    width: 30em;
+    color: white;
+    overflow: hidden; /* oculta o texto que ultrapassar o tamanho da div */
+    text-overflow: ellipsis;
+    word-break:keep-all;
+    transition: 0.5;
+    margin-top: 2em;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.781));
+}
+
+
+.div-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15em;
+    justify-content: center;
+    align-items: center;
+}
+.center-cards{
+    display: flex;
+    flex-direction: column;
+    height: 15em;
+    width: 15em;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    background-color: rgba(100, 17, 177, 0);
+    width: 13em;
+    height: 9em;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: none;
+    overflow: hidden;
+    display: block;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.781));
+    padding: 2%;
+}
+.cards:hover {
+    color: white;
+    transition: 0.3s;
+    margin-bottom: 20%;
+    filter: drop-shadow(0px 15px 15px rgba(111, 111, 111, 0.781));
+  }
+.active2 {
+    border: 3px solid black;
+    border-color: rgb(0, 110, 255);
+    border-radius: 25px;
+    margin: 20px;
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.781));
+    
+}
+.inactive {
+    opacity: 0.6;
+}
+.cards img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+}
+
+
+.div-gols{
+    height: 8em;
+    width: 25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5;
+    background-color: rgba(0, 255, 255, 0);
+}
+.gols{
+    width: 11em;
+    display: flex;
+    flex-direction: row;
+    margin-right: 3em;
+    transition: 0.5;
+    align-items: center;
+}
+.title-div{
+    font-family: LemonMilk;
+    font-size: 1.5em;
+}
+/* VARIAÇÕES DE IMAGENS */
+
+.DWeb, .ES, .DD, .ALP, .SO, .MBD
+{
+    height: 44em;
+    background: 
+        linear-gradient( to right, rgb(0, 0, 0) 15%, rgba(245, 244, 244, 0)), 
+        url(../img/WEB.png); 
+    background-position: center;
+    background-size:cover;
+    text-align: justify;
+    display: flex;
+}
+.DWeb
+{
+    background-image: 
+        linear-gradient( to right,#036955 50%, rgba(205, 152, 152, 0)90%), 
+        url(../img/WEB.png); 
+}
+.ES
+{
+    background-image: 
+    linear-gradient( to right,#010101 50%, rgba(205, 152, 152, 0)90%), 
+        url(../img/ES-TEST.jpg); 
+}
+.DD
+{
+    background-image: 
+        linear-gradient( to right, rgb(31, 3, 109)50%, rgba(245, 244, 244, 0)90%), 
+        url(../img/DD-back.webp); 
+}
+.ALP
+{
+    background-image: 
+        linear-gradient( to right,#012519 50%, rgba(205, 152, 152, 0)90%), 
+        url(../img/linguagens-de-programacao.jpeg.webp);
+        size: 20em 
+}
+.SO
+{
+    background-image: 
+        linear-gradient( to right,#02104d 50%, rgba(205, 152, 152, 0)90%), 
+        url(../img/SO-back.jpg);
+}
+.MBD
+{
+    background-image: 
+        linear-gradient( to right,#210130 50%, rgba(205, 152, 152, 0)90%), 
+        url(../img/mbd-back2.png);
+}
+
+
+@media screen and (max-width: 768px) {
+    .div-buttons{
+        flex-wrap: wrap;
+        overflow: auto;
+        scrollbar-color: red;
+        
+    }
+    .content-idols{
+        height: 40em;
+        margin-left: 0;
+        justify-content: center;
+    }
+  
+    .text-idols{
+        font-size: 1.2em;
+    }
+    .div1-idols {
+        margin-left: 0em;
+        margin-top: 4em;
+        justify-content: center;
+        justify-items: center;
+    
+    }
+     .titulo-idolos{
+        font-size: 60;
+        font-family: Aileron;
+        color: white;
+        transition: 0.5;
+        justify-content: center;
+    }
+   
+  }
+
+

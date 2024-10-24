@@ -1,0 +1,212 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+@font-face {
+    font-family: Aileron;
+    src: url(../fonts/Ailerons-Typeface.otf);
+}
+@font-face {
+    font-family: Corinthians;
+    src: url(../fonts/FONT-CORINTHIANS-2023.otf);
+    
+}
+@font-face {
+    font-family: LemonMilk;
+    src: url(../fonts/LEMONMILK-Bold.otf);
+}
+@font-face {
+    font-family: LemonMilk R;
+    src: url(../fonts/LEMONMILK-Medium.otf);
+}
+.titulo-principal{
+    font-family: LemonMilk;
+    justify-self: center;
+    font-size: 2.5em;
+    color: white;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.781));
+    text-decoration-line: solid black;
+}
+.titulo-principal2{
+    font-family: LemonMilk;
+    justify-self: center;
+    font-size: 2.8em;
+    color: white;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.781));
+    text-decoration-line: solid black;
+}
+.titulo-paulasouza{
+    font-family: LemonMilk;
+    justify-self: center;
+    font-size: 1.5em;
+    color: white;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.781));
+    text-decoration-line: solid black;
+}
+
+.container-fatec{
+    background: linear-gradient( #021155 20%, #036955);
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sobre-curso{
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    height: 41em;
+}
+.sobre-curso2{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    height: 46em;
+    margin-bottom: 5em;
+}
+.cards-total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 35em;
+}
+.cards2{
+    display: block;
+    flex-direction: column;
+    height: 30em;
+    width: 25em;
+    margin-right: 2em;
+    border-radius: 2em;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: none;
+    overflow: hidden;
+    display: block;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.781));
+}
+.cards2:hover{
+    background-color: #01010156;
+    transition: 0.5s;
+    margin-bottom: 5em;
+}
+.cards3active{
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-color: rgb(255, 255, 255);
+    border-radius: 3em;
+}
+
+.titulo-cards2{
+    font-family: LemonMilk;
+    justify-self: center;
+    font-size: 1.7em;
+    color: white;
+}
+
+.texto-fade2{
+    font-family: Raleway;
+    font-size: 1em;
+    color: white;
+    text-align: justify;
+    margin: 2em;
+    
+}
+.texto-fade3{
+    font-family: Raleway;
+    font-size: 1.3em;
+    color: white;
+    text-align: justify;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.781));
+}
+.texto-fade4{
+    font-family: Raleway;
+    font-size: 1.3em;
+    color: white;
+    text-align: justify;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.781));
+    margin: 2em;
+    margin-left: 1em;
+}
+
+.metade{
+    width: 60em;
+    height: 38em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.metade2{
+    width: 60em;
+    height: 43em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.containerTITULO{
+    margin-top: 4em;
+    margin-left: 8em;
+}
+.containerTITULO2{
+    margin-top: 1em;
+    margin-left: 8em;
+    background-color: #00000056;
+    width: 45em;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2em;
+}
+.containerTITULO2:hover{
+    border: 2px solid white;
+    transition: 0.5;
+}
+.containerpaulasouza{
+    margin-top: 4em;
+    margin-left: 8em;
+}
+.imagepaula{
+    height: 12em;
+    margin: 1em;
+    border-radius: 1em;
+    margin-left: 1.5em;
+}
+.imagefatec{
+    height: 100%; 
+    clip-path: polygon(0 100%, 20% 0, 100% 0, 100% 100%);
+    mask-image: linear-gradient(to bottom, white 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, white 70%, transparent 100%);
+}
+
+/* COR DO FUNDO POR MATÉRIA*/
+.DWeb-F
+{
+   background: linear-gradient( #021155 20%, #036955); 
+}
+.ES-F
+{
+    background: linear-gradient( #021155 20%, #010101); 
+}
+.DD-F
+{
+    background: linear-gradient( #021155 20%, rgb(31, 3, 109)); 
+}
+.ALP-F
+{
+    background: linear-gradient(  #021155 20%, #012519);  
+}
+.SO-F
+{
+    background: linear-gradient(  #021155 20%, #02104d);
+}
+.MBD-F
+{
+    background: linear-gradient(  #021155 20%, #210130);
+}
+@media screen and (max-width: 768px) {
+    .sobre-curso{
+        flex-wrap: wrap;
+        overflow: auto;
+        scrollbar-color: red;
+        
+    }
+}

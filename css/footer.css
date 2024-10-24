@@ -1,0 +1,26 @@
+.bg {
+    background-color: rgba(115, 45, 247, 0.753);
+}
+
+.paragraf {
+    text-align: justify;
+    color:white;
+    font-family: cursive;
+}
+
+.paragrafs {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: cursive;
+}
+
+.top {
+    text-align: justify;
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+}
+
+.top:hover {
+    color: rgb(255, 187, 0);
+}

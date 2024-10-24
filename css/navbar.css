@@ -1,0 +1,81 @@
+<!------------------NAV BAR----------------------------->
+html{
+    scroll-behavior: smooth;
+}
+.green
+{
+    background-color: #1e1f1e;
+}
+.logo-time{
+  height: 6em; 
+  width: 14em; 
+  margin-top: 1%; 
+  margin-bottom: 1%;
+}
+div.redline {
+  background: linear-gradient( to right,#ffffff 10%,rgb(46, 61, 170) ,rgb(28, 23, 67)90%);
+  height: 110px; 
+  align-items: center; 
+  flex-direction: column; 
+  display:flex; 
+  justify-content: center;
+  border-bottom: 2px solid #000000;
+  border-top: 2px solid #000000;
+}
+div.containera
+{
+  font-family: Raleway;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+  
+  
+}
+
+div.containera a
+{
+    color: #ffffff;
+    text-decoration: none;
+    font: 17px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+div.borderXwidth a:before, div.borderXwidth a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 0.1em;
+    content: '';
+    background: #fafafa;
+    transition: all 0.3s;
+}
+
+div.borderXwidth a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderXwidth a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Para que a navbar fique acima de outros conteúdos */
+}

@@ -1,0 +1,298 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+/* Estilos gerais do container */
+.container-custom {
+  background-color: #fff;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
+#tabs-menu-1 p {
+  margin-top: 1rem;
+}
+.nav-link {
+  color: #000 !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  font-weight: bolder;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: transparent !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 400;
+}
+
+.img2 {
+  width: 50%;
+  height: 500px;
+  display: block;
+}
+
+.txt {
+  text-align: justify;
+  color: #000;
+  padding-left: 70px;
+}
+
+.texto-fade{
+  font-family: Raleway;
+  font-size: 1.2em;
+  justify-content: justify;
+}
+.title-2{
+  font-size: 2em;
+}
+
+.container2 {
+  padding: 0;
+  padding-left: 250px;
+}
+
+.container3 {
+  display: flex; /* Para garantir que container3 use flexbox */
+  align-items: flex-start; /* Alinha os itens no topo */
+  margin: 20px 0; /* Margem para espaçamento */
+}
+
+.imagem-e-mapa {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos se movam para a próxima linha se necessário */
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.imagem {
+  flex: 1;
+  margin-right: 20px; /* Espaço entre a imagem e o mapa */
+  max-width: 100%; /* Para garantir que a imagem não exceda o contêiner */
+}
+
+#map {
+  flex: 1;
+  position: relative;
+  width: 100%; /* Para garantir que o mapa ocupe a largura total do contêiner */
+  padding-top: 56.25%; /* Proporção de 16:9 */
+  margin-top: 5px; /* Espaço acima do mapa */
+  padding-left: 200px;
+}
+
+#map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350px; /* Para garantir que o iframe ocupe toda a altura do contêiner */
+  border: 0;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+  .imagem-e-mapa {
+      flex-direction: column; /* Coloca os elementos em coluna em telas menores */
+  }
+
+  .imagem {
+      margin-right: 0; /* Remove a margem à direita na visualização em coluna */
+      margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+  }
+}
+
+
+h1 {
+  margin: 0; /* Remove margem padrão para o título */
+}
+
+.accordion {
+  display: flex; /* Exibe os itens do acordeão em linha */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha, se necessário */
+}
+
+.accordion-item {
+  margin-right: 20px; /* Espaçamento entre os itens do acordeão em linha */
+  margin-bottom: 10px; /* Espaçamento abaixo dos itens */
+}
+
+.accordion-title {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #e9e9e9;
+  color: #000;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 16px;
+  transition: background-color 0.4s; /* Efeito de transição suave */
+}
+
+.accordion-content {
+  display: none; /* Conteúdo começa oculto */
+  padding: 15px;
+  background-color: #f1f1f1;
+  text-align: justify;
+  margin-top: 0; /* Margem superior para evitar espaçamento */
+}
+
+.accordion-title.active,
+.accordion-title:hover {
+  background-color: #ddd; /* Muda a cor do fundo quando ativo ou em hover */
+}
+
+
+/* Responsividade */
+@media (max-width: 800px) {
+  .img2,
+  .txt {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+  }
+
+  .txt {
+      padding-left: 0;
+  }
+
+  .container {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .container2 {
+      padding-left: 0;
+      text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .txt {
+      text-align: center;
+      padding: 0;
+  }
+
+  .container {
+      padding: 5px;
+  }
+
+  .container2 {
+      padding-left: 0;
+      padding: 5px;
+      text-align: center;
+  }
+}
+
+/* Estilos do carrossel */
+.custom-carousel .carousel-container {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: 120px auto;
+}
+
+.custom-carousel .carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-carousel .carousel-item {
+  min-width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.custom-carousel .pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.custom-carousel .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.custom-carousel .dot.active {
+  background-color: #717171;
+}
+
+.custom-carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-carousel .prev {
+  left: 10px;
+}
+
+.custom-carousel .next {
+  right: 10px;
+}
+
+/* Media queries para tornar o carrossel responsivo */
+@media (max-width: 600px) {
+  .custom-carousel .carousel-item {
+      height: 200px;
+  }
+
+  .custom-carousel .carousel-container {
+      max-width: 100%;
+  }
+
+  .custom-carousel button {
+      padding: 5px;
+  }
+}
+
+/* Estilos gerais do menu de navegação */
+body {
+  font-family: "Reddit Sans Condensed", sans-serif;
+}
+
+@media (max-width: 576px) {
+  .mt-custom-sm {
+    margin-top: 40px;
+  }
+  #dsm-img {
+    width: 65% !important;
+    margin: 0px auto;
+    margin-top: 2rem;
+  }
+}
+
+/* Responsividade do menu hambúrguer */
+@media (max-width: 900px) {
+}
+
+@media (max-width: 900px) {
+  .instituição {
+      text-align: center;
+      padding-left: 0;
+  }
+}
