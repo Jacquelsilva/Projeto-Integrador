@@ -1,5 +1,6 @@
 .bg {
     background-color: rgba(115, 45, 247, 0.753);
+
 }
 
 .paragraf {
@@ -10,7 +11,7 @@
 
 .paragrafs {
     color: rgb(255, 255, 255);
-    text-align: center;
+    text-align: start;
     font-family: cursive;
 }
 
@@ -24,3 +25,4 @@
 .top:hover {
     color: rgb(255, 187, 0);
 }
+

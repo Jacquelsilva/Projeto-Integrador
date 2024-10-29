@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
 <!------------------NAV BAR----------------------------->
 html{
     scroll-behavior: smooth;
@@ -13,7 +14,7 @@ html{
   margin-bottom: 1%;
 }
 div.redline {
-  background: linear-gradient( to right,#ffffff 10%,rgb(46, 61, 170) ,rgb(28, 23, 67)90%);
+  background: #ffffff;
   height: 110px; 
   align-items: center; 
   flex-direction: column; 
@@ -25,19 +26,20 @@ div.redline {
 div.containera
 {
   font-family: Raleway;
-  color: white;
+  color: #000000;
   margin: 0 auto;
   text-align: center;
   z-index: 2;
+  margin-bottom: 15px;
   
   
 }
 
 div.containera a
 {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
-    font: 17px Raleway;
+    font: 17px LemonMilk R;
     margin: 0px 10px;
     padding: 10px 10px;
     position: relative;
@@ -51,7 +53,7 @@ div.borderXwidth a:before, div.borderXwidth a:after
     width: 0%;
     height: 0.1em;
     content: '';
-    background: #fafafa;
+    background: #000000;
     transition: all 0.3s;
 }
 
@@ -79,3 +81,4 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
     width: 100%;
     z-index: 1000; /* Para que a navbar fique acima de outros conteúdos */
 }
+
