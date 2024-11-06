@@ -41,7 +41,10 @@
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.781));
     text-decoration-line: solid black;
 }
-
+.tittle_perguntas{
+    text-align: center;
+    background-color: rgb(177, 212, 212);
+}
 .container-fatec{
     background: linear-gradient( #021155 20%, #036955);
     height: 100em;

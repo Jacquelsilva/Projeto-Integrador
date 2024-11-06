@@ -184,3 +184,104 @@ function nothover() {
     document.getElementById('button5').style.opacity = 1;
   }
 }
+
+function mudarButton_pergunta1() {
+  document.getElementById('titulo_pergunta').innerHTML = "O que é TI e qual a sua importância?";
+  document.getElementById('textpergunta').innerHTML = "Tecnologia da Informação (TI) envolve o uso de sistemas computacionais, redes e software para processar, armazenar e transmitir dados. Ela é essencial para automatizar processos, melhorar a comunicação e apoiar a tomada de decisões, impactando diretamente na eficiência e inovação das organizações.<br>A TI é fundamental no mundo atual, pois facilita a comunicação, otimiza processos e cria novas oportunidades de negócio. Com o avanço de tecnologias como inteligência artificial e Big Data, ela tem sido crucial para a transformação digital e o crescimento econômico.";
+  document.getElementById('button_pergunta2').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta3').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta4').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta5').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta6').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta1').className = 'cards_perguntas active';
+  activeButton = 'button_pergunta1';
+}
+
+function mudarButton_pergunta2() {
+  document.getElementById('titulo_pergunta').innerHTML = "Quais são as principais áreas de atuação em TI?";
+  document.getElementById('textpergunta').innerHTML = "Existem diversas áreas e sub-áreas de atuação no mercado da Tecnologia da informação, porém os mais conhecidos são.<br>Programador Front-End<br>Programador Back-End<br>Analista de Dados<br>Gestor de Segurança.";
+  document.getElementById('button_pergunta2').className = 'cards_perguntas active';
+  document.getElementById('button_pergunta3').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta4').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta5').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta6').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta1').className = 'cards_perguntas inactive';
+  activeButton = 'button_pergunta2';
+}
+function mudarButton_pergunta3() {
+  document.getElementById('titulo_pergunta').innerHTML = "O que faz um desenvolvedor de software?";
+  document.getElementById('textpergunta').innerHTML = "Um desenvolvedor de software é um profissional responsável por criar, testar e manter programas de computador. Ele escreve o código que possibilita o funcionamento de sistemas, aplicativos ou sites.<br> As principais funções de um desenvolvedor de software incluem:";
+  document.getElementById('button_pergunta2').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta3').className = 'cards_perguntas active';
+  document.getElementById('button_pergunta4').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta5').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta6').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta1').className = 'cards_perguntas inactive';
+  activeButton = 'button_pergunta3';
+}
+function mudarButton_pergunta4() {
+  document.getElementById('titulo_pergunta').innerHTML = "Como posso começar?";
+  document.getElementById('textpergunta').innerHTML = "Pode começar entrando em contato com o suporte FATEC e se inscrever para poder realizar o vestibular referente ao curso de DSM (Desenvolvimento de Software Multiplataforma).<br>fatecindaiatuba@hotmail.com<br>+55 11 98898-5343";
+  document.getElementById('button_pergunta2').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta3').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta4').className = 'cards_perguntas active';
+  document.getElementById('button_pergunta5').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta6').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta1').className = 'cards_perguntas inactive';
+  activeButton = 'button_pergunta4';
+}
+function mudarButton_pergunta5() {
+  document.getElementById('titulo_pergunta').innerHTML = "Quais as principais linguagens de programação?";
+  document.getElementById('textpergunta').innerHTML = "As principais linguagens de programação variam de acordo com o tipo de projeto e as necessidades específicas, mas algumas se destacam devido à sua popularidade, versatilidade e uso generalizado. Aqui estão algumas das mais importantes:<br>Python: Muito popular pela sua simplicidade e legibilidade, é amplamente usada em ciência de dados, automação, desenvolvimento web, inteligência artificial e aprendizado de máquina.<br><br>JavaScript: Essencial para o desenvolvimento web, especialmente em sites dinâmicos. É executada no navegador, mas também pode ser usada no back-end com o Node.js.<br><br>Java: Uma das linguagens mais antigas e ainda muito usada em sistemas corporativos, aplicativos Android, e grandes plataformas. Ela é conhecida pela portabilidade e robustez<br><br>C/C++: São linguagens de baixo nível, extremamente rápidas e eficientes. O C é utilizado para sistemas operacionais, enquanto o C++ é amplamente usado em jogos, sistemas embarcados e aplicações de alto desempenho.<br><br>C#: Principalmente usada no desenvolvimento de software para o ecossistema Microsoft, incluindo aplicativos Windows e jogos (com o Unity).";
+  document.getElementById('button_pergunta2').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta3').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta4').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta5').className = 'cards_perguntas active';
+  document.getElementById('button_pergunta6').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta1').className = 'cards_perguntas inactive';
+  activeButton = 'button_pergunta5';
+}
+function mudarButton_pergunta6() {
+  document.getElementById('titulo_pergunta').innerHTML = "O que é Inteligência Artificial (IA) e como ela impacta a area de TI?";
+  document.getElementById('textpergunta').innerHTML = "A Inteligência Artificial (IA) envolve a criação de sistemas capazes de aprender, tomar decisões e resolver problemas de forma autônoma, utilizando algoritmos e dados. Ela simula processos cognitivos humanos, como reconhecimento de padrões e análise preditiva.<br>Na área de TI, a IA melhora a automação de tarefas, otimiza o processamento de dados e contribui para a personalização de serviços. Ela também fortalece a segurança cibernética, identificando padrões de ataques e prevenindo ameaças de forma mais eficiente.";
+  document.getElementById('button_pergunta2').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta3').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta4').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta5').className = 'cards_perguntas inactive';
+  document.getElementById('button_pergunta6').className = 'cards_perguntas active';
+  document.getElementById('button_pergunta1').className = 'cards_perguntas inactive';
+  activeButton = 'button_pergunta6';
+}
+
+function nothover_perguntas() {
+  if (activeButton === activeHover) {
+    document.getElementById(activeButton).style.opacity = 1;
+  }
+  else if (activeButton === 'button_pergunta1') {
+    document.getElementById('button_pergunta1').style.opacity = 1;
+    document.getElementById(activeHover).style.opacity = 0.6;
+  } else if (activeButton === 'button_pergunta2') {
+    document.getElementById('button_pergunta2').style.opacity = 1;
+    document.getElementById(activeHover).style.opacity = 0.6;
+  } else if (activeButton === 'button_pergunta3') {
+    document.getElementById('button_pergunta3').style.opacity = 1;
+    document.getElementById(activeHover).style.opacity = 0.6;
+  } else if (activeButton === 'button_pergunta4') {
+    document.getElementById('button_pergunta4').style.opacity = 1;
+    document.getElementById(activeHover).style.opacity = 0.6;
+  }  
+  else if (activeButton === 'button_pergunta5') {
+    document.getElementById('button_pergunta5').style.opacity = 1;
+    document.getElementById(activeHover).style.opacity = 0.6;
+  } 
+  else if (activeButton === 'button_pergunta6') {
+    document.getElementById('button_pergunta6').style.opacity = 1;
+    document.getElementById(activeHover).style.opacity = 0.6;
+  } else {
+    document.getElementById('button_pergunta1').style.opacity = 1;
+    document.getElementById('button_pergunta2').style.opacity = 1;
+    document.getElementById('button_pergunta3').style.opacity = 1;
+    document.getElementById('button_pergunta4').style.opacity = 1;
+    document.getElementById('button_pergunta5').style.opacity = 1;
+  }
+}
