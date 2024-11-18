@@ -148,17 +148,34 @@ body{
 
 }
 .titulo-pergunta{
+    text-transform: uppercase;
+    font-size: 30px;
     text-align: center;
-    background-image: linear-gradient(#e3e0fa 50%, rgb(128, 228, 223)90%);
+    font-family: Raleway;
+    color: aliceblue;
+    background-color: #7dabf4 ;
+    margin-bottom: 0%;
+}
+.separate_pergunta{
+    background-color: #7dabf4 ;
+    height: 15px;
 }
 .text-pergunta{
+    font-family: Raleway;
+    color: aliceblue;
     text-align: justify;
-    background-image: linear-gradient(rgb(128, 228, 223)50%,#e3e0fa 90%);
+    background-color: #7dabf4 ;
+}
+.pergunta:hover{
+    color: black;
+
 }
 .pergunta{
+    color: aliceblue;
     margin: 1px;
     margin-bottom: 1px;
     text-align: center;
+    font-family: Raleway;
 }
 .div-gols{
     height: 8em;
